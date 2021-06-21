@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+		  	<section>
+		  	  <h1>SVG</h1>  
+		  	  <h2>Scalable Vector Graphics</h2> 
+			  <img src="./image/img1.png" alt="svg" style="height: 250px;">
+			  <h3>Author of presentation: Kiryukhin Viacheslav</h3>
+		  	</section>
+		  	<section>
+		  	  <h2>SVG</h2> 
+			  <ul>
+		  	    <li>What it means?</li>
+				  <img src="./image/img2.png" alt="svg" style="height: 180px;">
+		  	    <li>History</li>
+				  <img src="./image/img3.png" alt="svg" style="height: 180px;">
+			  </ul>
+		  	</section>
+		  	<section>
+		  	  <h2>Language features</h2>
+			  <ul>
+		  	    <li>Description of paths</li>
+		  	    <li>Description of basic geometric shapes</li>
+		  	    <li>A wide range of visual properties that can be applied to shapes and paths: coloring, opacity, corner rounding, and more.</li>
+		  	    <li>Interactivity</li>
+		  	    <li>Animation and scripts</li>
+			  </ul>
+			  <img src="./image/img4.jpg" alt="svg" style="height: 200px;">
+			  <img src="./image/img5.jpg" alt="svg" style="height: 200px;">
+			  <img src="./image/img6.jpg" alt="svg" style="height: 200px;">
+		  	</section>
+		  	<section>
+		  	  <h2>Advantages of the SVG format</h2>
+			  <ul>
+		  	    <li>Text format: SVG files can be read and edited</li>
+		  	    <li>Scalability - SVG is a vector format. It is possible to enlarge any part of the SVG image without losing quality.</li>
+		  	    <li>Text in SVG graphics is text, not image</li>
+		  	    <li>SVG elements can be manipulated with JavaScript</li>
+		  	    <li>SVG documents easily integrate with HTML documents</li>
+		  	    <li>CSS compatibility. The rendering of SVG elements can be controlled with a CSS style sheet</li>
+			  </ul>
+		  	</section>
+		  	<section>
+		  	  <h2>Disadvantages of the format</h2>
+			  <ul>
+		  	    <li>Support for 3D graphics is completely absent</li>
+		  	    <li>SVG inherits all the disadvantages of XML, such as large file size</li>
+		  	    <li>Difficulty to use in large cartographic applications</li>
+			  </ul>
+		  	</section>
+			<section>
+		  	  <h2>SVG document structure</h2> 
+			    <ul>
+		  	    <li>The first line is a standard XML header, a declaration indicating the XML version</li>
+			  	<b><em><code>
+			  	  <code><</code>?xml version="1.0" encoding="UTF-8" standalone="no"?<code>></code>
+			  	</code></em></b>
+			    
+			  </ul>
+		  	</section>
+			<section>
+		  	  <h2>SVG document structure</h2>  
+		  	  <li>The second and third lines must contain the DOCTYPE header, which determines the type of the document</li>
+			  <p>
+				<code>
+					<b><em><code><</code>!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+					"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"<code>></code></em></b>
+				</code>
+			  </p>
+		  	</section>
+			<section>
+		  	  <h2>SVG document structure  </h2>
+			  <ul>
+		  	    <li>The fourth line contains the root element of the document, specifying the SVG namespace</li>
+		  	    <p>
+				  <code>
+					  <code><</code>svg version="1.1"
+					  baseProfile="full"
+					  xmlns="http://www.w3.org/2000/svg"
+					  xmlns:xlink="http://www.w3.org/1999/xlink"
+					  xmlns:ev="http://www.w3.org/2001/xml-events"
+					  width="100%" height="100%"<code>></code>
+				  </code>
+			    </p>
+			  </ul>
+		  	</section>
+		  </div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
